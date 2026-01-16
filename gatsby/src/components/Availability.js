@@ -9,7 +9,7 @@ export default function Availability({ title, availabilitySelect, image }) {
     <section id="availability" className="bg-gray-100">
       <div className="container mx-auto pt-16 max-w-screen-xl">
         <div className="text-center">
-          <h2 className="text-4xl font-extrabold text-center pb-1">{title}</h2>
+          <h2 className="text-4xl font-extrabold text-center pb-1">Our Rooms</h2>
           <p className="text-gray-700 text-lg px-4">
             For enquiries please contact{' '}
             <a className="text-primary700 font-semibold" href={`mailto:${email}`}>
