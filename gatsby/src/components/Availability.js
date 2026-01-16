@@ -12,11 +12,11 @@ export default function Availability({ title, availabilitySelect, image }) {
           <h2 className="text-4xl font-extrabold text-center pb-1">{title}</h2>
           <p className="text-gray-700 text-lg px-4">
             For enquiries please contact{' '}
-            <a className="text-red-700 font-semibold" href={`mailto:${email}`}>
+            <a className="text-primary700 font-semibold" href={`mailto:${email}`}>
               {email}
             </a>{' '}
             or call{' '}
-            <a className="text-red-700 font-semibold" href={`tel:${phone}`}>
+            <a className="text-primary700 font-semibold" href={`tel:${phone}`}>
               {phone}
             </a>
           </p>
@@ -41,7 +41,7 @@ function AvailabilityCard({ roomType, title, text, image }) {
         />
       </div>
       <div className="px-6 pt-6 pb-10">
-        <p className="text-xs text-red-700 font-semibold uppercase">
+        <p className="text-xs text-primary700 font-semibold uppercase">
           {roomType}
         </p>
         <h3 className="text-lg font-bold my-1.5">{title}</h3>

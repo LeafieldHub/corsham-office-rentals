@@ -63,7 +63,7 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
             <button
               id="toggle"
               type="button"
-              className="bg-red-900 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-primary900 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-primary700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => setOpen(!open)}

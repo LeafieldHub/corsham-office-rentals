@@ -11,11 +11,11 @@ export default function Description({ title, description }) {
           <h1 className="text-4xl font-extrabold">{title}</h1>
           <p className="text-gray-700 text-lg pt-2">
             For enquiries please contact{' '}
-            <a className="text-red-700 font-semibold" href={`mailto:${email}`}>
+            <a className="text-primary700 font-semibold" href={`mailto:${email}`}>
               {email}
             </a>{' '}
             or call{' '}
-            <a className="text-red-700 font-semibold" href={`tel:${phone}`}>
+            <a className="text-primary700 font-semibold" href={`tel:${phone}`}>
               {phone}
             </a>
           </p>

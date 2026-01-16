@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="inline-flex rounded-md shadow">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-red-700"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary700"
               >
                 Contact us
               </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
               <div className="px-6 mt-4 lg:mt-0">
                 <h2 className="font-semibold text-gray-900 text-xs">EMAIL</h2>
                 <a
-                  className="text-red-700 font-semibold"
+                  className="text-primary700 font-semibold"
                   href={`mailto:${email}?subject=Corsham%20Office%20Rental%20Enquiry`}
                 >
                   {email}
@@ -66,7 +66,7 @@ export default function Footer() {
                 <h2 className="font-semibold text-gray-900 text-xs mt-4">
                   PHONE
                 </h2>
-                <a className="text-red-700 font-semibold" href={`tel:${phone}`}>
+                <a className="text-primary700 font-semibold" href={`tel:${phone}`}>
                   {phone}
                 </a>
               </div>

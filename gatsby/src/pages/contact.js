@@ -63,7 +63,7 @@ export default function Contact() {
               <h1 className="text-3xl mb-6 font-extrabold">Get in touch</h1>
               <h2 className="font-semibold text-gray-900 text-xs">PHONE</h2>
               <a
-                className="text-red-700 font-semibold md:text-xl"
+                className="text-primary700 font-semibold md:text-xl"
                 href={`tel:${phone}`}
               >
                 {phone}
@@ -72,7 +72,7 @@ export default function Contact() {
                 EMAIL
               </h2>
               <a
-                className="text-red-700 font-semibold md:text-xl break-words"
+                className="text-primary700 font-semibold md:text-xl break-words"
                 href={`mailto:${email}?subject=Corsham%20Office%20Rental%20Enquiry`}
               >
                 {email}
@@ -164,7 +164,7 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="md:w-32 bg-primary hover:bg-red-700 text-white font-medium py-3 px-6 rounded-md mt-4 transition ease-in-out duration-300"
+                  className="md:w-32 bg-primary hover:bg-primary700 text-white font-medium py-3 px-6 rounded-md mt-4 transition ease-in-out duration-300"
                 >
                   Submit
                 </button>
