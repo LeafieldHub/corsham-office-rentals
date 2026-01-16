@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
@@ -32,8 +33,17 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
+            <div className="flex-shrink-0 flex items-center pr-4">
+              <Link to="/">
+                <StaticImage
+                  src="../images/logo transparency.png"
+                  alt="Leafield Hub Logo"
+                  placeholder="blurred"
+                  height={45}
+                />
+              </Link>
+            </div>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <Link to="/" className="nav-item" activeClassName="active">
                   Home
