@@ -3613,7 +3613,7 @@
     "postcss-normalize-unicode" "^4.0.1"
     "postcss-normalize-url" "^4.0.1"
     "postcss-normalize-whitespace" "^4.0.2"
-    "postcss-ordeprimaryvalues" "^4.1.2"
+    "postcss-ordered-values" "^4.1.2"
     "postcss-reduce-initial" "^4.0.3"
     "postcss-reduce-transforms" "^4.0.2"
     "postcss-svgo" "^4.0.3"
@@ -7970,9 +7970,9 @@
     "postcss" "^7.0.0"
     "postcss-value-parser" "^3.0.0"
 
-"postcss-ordeprimaryvalues@^4.1.2":
+"postcss-ordered-values@^4.1.2":
   "integrity" "sha512-2fCObh5UanxvSxeXrtLtlwVThBvHn6MQcu4ksNT2tsaV2Fg76R2CV98W7wNSlX+5/pFwEyaDwKLLoEV7uRybAw=="
-  "resolved" "https://registry.npmjs.org/postcss-ordeprimaryvalues/-/postcss-ordeprimaryvalues-4.1.2.tgz"
+  "resolved" "https://registry.npmjs.org/postcss-ordered-values/-/postcss-ordered-values-4.1.2.tgz"
   "version" "4.1.2"
   dependencies:
     "cssnano-util-get-arguments" "^4.0.0"
