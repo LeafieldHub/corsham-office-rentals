@@ -10,6 +10,10 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        primary: '#2a5c6a', // CHANGE THIS HEX CODE TO YOUR NEW COLOUR
+        secondary: '#F3F4F6',
+      },
       width: {
         '3/10': '30%',
       },
