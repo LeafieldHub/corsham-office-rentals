@@ -115,7 +115,7 @@ export default function Contact() {
                     value={state.name}
                     id="name"
                     placeholder="Full Name"
-                    className="w-100 mt-3 py-3 px-3 rounded-md bg-white border border-gray-300  text-gray-800 text-sm focus:border-red-600 focus:outline-none"
+                    className="w-100 mt-3 py-3 px-3 rounded-md bg-white border border-gray-300  text-gray-800 text-sm focus:border-primary focus:outline-none"
                   />
                 </div>
                 <div className="flex flex-col mt-2">
@@ -129,7 +129,7 @@ export default function Contact() {
                     value={state.email}
                     id="email"
                     placeholder="Email"
-                    className="w-100 mt-3 py-3 text-sm px-3 rounded-md bg-white border border-gray-300  text-gray-800  focus:border-red-600 focus:outline-none"
+                    className="w-100 mt-3 py-3 text-sm px-3 rounded-md bg-white border border-gray-300  text-gray-800  focus:border-primary focus:outline-none"
                     required
                   />
                 </div>
@@ -144,7 +144,7 @@ export default function Contact() {
                     onChange={handleChange}
                     id="tel"
                     placeholder="Telephone Number"
-                    className="w-100 mt-3 py-3 text-sm px-3 rounded-md bg-white border border-gray-300  text-gray-800  focus:border-red-600 focus:outline-none"
+                    className="w-100 mt-3 py-3 text-sm px-3 rounded-md bg-white border border-gray-300  text-gray-800  focus:border-primary focus:outline-none"
                   />
                 </div>
 
@@ -159,12 +159,12 @@ export default function Contact() {
                     onChange={handleChange}
                     id="message"
                     placeholder="Enter message"
-                    className="h-24 w-100 mt-3 py-3 text-sm px-3 rounded-md bg-white border border-gray-300  text-gray-800  focus:border-red-600 focus:outline-none"
+                    className="h-24 w-100 mt-3 py-3 text-sm px-3 rounded-md bg-white border border-gray-300  text-gray-800  focus:border-primary focus:outline-none"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="md:w-32 bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-md mt-4 transition ease-in-out duration-300"
+                  className="md:w-32 bg-primary hover:bg-red-700 text-white font-medium py-3 px-6 rounded-md mt-4 transition ease-in-out duration-300"
                 >
                   Submit
                 </button>

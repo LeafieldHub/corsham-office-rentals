@@ -29,7 +29,7 @@ export default function Hero({ title, text, image }) {
                 <div className="rounded-md shadow">
                   <Link
                     to="#availability"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-red-700 md:py-4 md:text-lg md:px-10"
                   >
                     Availability
                   </Link>
