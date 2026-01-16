@@ -27,7 +27,7 @@ export default function Navigation() {
 }
 
 const NavBar = ({ sanitySiteSettings: { menu } }) => {
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState(false);
   return (
     <nav className="bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,32 +44,30 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
               </Link>
             </div>
             <div className="hidden md:block">
-                {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                <Link to="/" className="nav-item" activeClassName="active">
-                  Home
-                </Link>
-                {menu.map((item) => (
-                  <Link
-                    to={`/${item.page.slug.current}`}
-                    className="nav-item"
-                    activeClassName="active"
-                  >
-                    {item.title}
-                  </Link>
-                ))}
+              <Link to="/" className="nav-item" activeClassName="active">
+                Home
+              </Link>
+              {menu.map((item) => (
                 <Link
-                  to="/contact"
+                  key={item.title}
+                  to={`/${item.page.slug.current}`}
                   className="nav-item"
                   activeClassName="active"
                 >
-                  Contact & Location
+                  {item.title}
                 </Link>
-              </div>
+              ))}
+              <Link
+                to="/contact"
+                className="nav-item"
+                activeClassName="active"
+              >
+                Contact & Location
+              </Link>
             </div>
           </div>
 
           <div className="-mr-2 flex md:hidden">
-            {/* <!-- Mobile menu button --> */}
             <button
               id="toggle"
               type="button"
@@ -79,11 +77,6 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
               onClick={() => setOpen(!open)}
             >
               <span className="sr-only">Open main menu</span>
-              {/* <!--
-              Heroicon name: outline/menu
-
-              Menu open: "hidden", Menu closed: "block"
-            --> */}
               <svg
                 className="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,11 +92,6 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
-              {/* <!--
-              Heroicon name: outline/x
-
-              Menu open: "block", Menu closed: "hidden"
-            --> */}
               <svg
                 className="hidden h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -124,12 +112,10 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
         </div>
       </div>
 
-      {/* <!-- Mobile menu, show/hide based on menu state. --> */}
       <div className={open ? 'block' : 'hidden'} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
           <Link
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen(false)}
             to="/"
             className="block nav-item"
             activeClassName="active"
@@ -138,6 +124,7 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
           </Link>
           {menu.map((item) => (
             <Link
+              key={item.title}
               to={`/${item.page.slug.current}`}
               className="block nav-item"
               activeClassName="active"
@@ -146,7 +133,7 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
             </Link>
           ))}
           <Link
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen(false)}
             to="/contact"
             className="block nav-item"
             activeClassName="active"
@@ -160,5 +147,5 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
 };
 
 NavBar.propTypes = {
-  sanitySiteSettings: PropTypes.node,
+  sanitySiteSettings: PropTypes.object,
 };
