@@ -36,7 +36,7 @@ const NavBar = ({ sanitySiteSettings: { menu } }) => {
             <div className="flex-shrink-0 flex items-center pr-4">
               <Link to="/">
                 <StaticImage
-                  src="../images/logo transparency.png"
+                  src="../images/logo.png"
                   alt="Leafield Hub Logo"
                   placeholder="blurred"
                   height={45}
