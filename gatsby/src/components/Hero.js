@@ -37,7 +37,7 @@ export default function Hero({ title, text, image }) {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <Link
                     to="/contact"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary700 bg-primary100 hover:bg-primary200 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-50 hover:bg-blue-100 md:py-4 md:text-lg md:px-10"
                   >
                     Contact
                   </Link>

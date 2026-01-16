@@ -17,11 +17,11 @@ img {
 }
 
 .nav-item:hover {
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+  background-color: #3b7487;
 }
 
 .nav-item.active {
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+  background-color: #2d5a69;
 }
 
 [data-reach-dialog-overlay]  [data-reach-dialog-content] {
