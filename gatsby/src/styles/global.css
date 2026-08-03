@@ -17,21 +17,21 @@ img {
 }
 
 .nav-item:hover {
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  background-color: rgba(29, 78, 216, var(--tw-bg-opacity, 1));
 }
 
 .nav-item.active {
-  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+  background-color: rgba(30, 58, 138, var(--tw-bg-opacity, 1));
 }
 
-[data-reach-dialog-overlay]  [data-reach-dialog-content] {
+[data-reach-dialog-overlay] [data-reach-dialog-content] {
   width: 800px;
   margin: 5vh auto;
-
 }
+
 @media(max-width: 520px) {
-    [data-reach-dialog-overlay]  [data-reach-dialog-content] {
-      width: 95%;
-      padding: 20px
-    }
+  [data-reach-dialog-overlay] [data-reach-dialog-content] {
+    width: 95%;
+    padding: 20px;
   }
+}
