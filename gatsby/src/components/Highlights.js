@@ -32,7 +32,7 @@ export default function Highlights({
         <div className="flex sm:pt-16 pb-32 px-8 flex-wrap">
           <div className="w-full sm:w-1/2 px-8 sm:px-6">
             <h2 className="font-extrabold pb-3 text-3xl">
-              {bottomHighlightsText.title}
+              {bottomHighlightsText?.title}
             </h2>
             <hr className="w-16 border-gray-300" />
             <p className="mt-3 text-gray-500 text-lg">
@@ -42,7 +42,7 @@ export default function Highlights({
           <div className="w-full sm:w-1/2 px-6 pt-8 sm:pt-0">
             <GatsbyImage
               className="object-cover bg-gray-100 rounded-lg"
-              image={secondImage.asset.gatsbyImageData}
+              image={secondImage?.asset?.gatsbyImageData}
             />
           </div>
         </div>
