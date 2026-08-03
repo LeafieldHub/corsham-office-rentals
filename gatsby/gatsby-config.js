@@ -11,7 +11,7 @@ module.exports = {
       options: {
         projectId: 'chergncb',
         dataset: 'production',
-        watchMode: true,
+        watchMode: false,
         token: process.env.SANITY_TOKEN,
       },
     },
