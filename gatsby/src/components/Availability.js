@@ -6,7 +6,6 @@ import { useContact } from '../hooks/useContact';
 export default function Availability({ title, availabilitySelect, image }) {
   const { email, phone } = useContact();
   return (
-    ### bg-gray-100
       <div className="container mx-auto pt-16 max-w-screen-xl">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold text-center pb-1">{title}</h2>
