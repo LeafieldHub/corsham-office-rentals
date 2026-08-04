@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import logoImg from '../images/logo transparency.png';
+import logoImg from '../images/logo white .png';
 
 export default function Navigation() {
   return (
