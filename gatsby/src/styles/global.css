@@ -21,8 +21,10 @@ img {
 }
 
 .nav-item.active {
-  background-color: #1e3a8a;
+  background-color: #ecfeff;
+  color: #083344;
 }
+
 
 [data-reach-dialog-overlay] [data-reach-dialog-content] {
   width: 800px;
