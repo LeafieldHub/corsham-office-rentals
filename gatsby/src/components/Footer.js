@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Get in touch!</span>
-            <span className="block text-sky-950">
+            <span className="block text-cyan-900">
               Enquire for availability.
             </span>
           </h2>
@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="inline-flex rounded-md shadow">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-950 hover:bg-sky-900"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-cyan-900 hover:bg-cyan-800"
               >
                 Contact us
               </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
             <div className="px-6 mt-4 lg:mt-0">
               <h2 className="font-semibold text-gray-900 text-xs">EMAIL</h2>
               <a
-                className="text-sky-950 font-semibold hover:underline"
+                className="text-cyan-900 font-semibold hover:underline"
                 href={`mailto:${email}?subject=Corsham%20Office%20Rental%20Enquiry`}
               >
                 {email}
@@ -66,7 +66,7 @@ export default function Footer() {
               <h2 className="font-semibold text-gray-900 text-xs mt-4">
                 PHONE
               </h2>
-              <a className="text-sky-950 font-semibold hover:underline" href={`tel:${phone}`}>
+              <a className="text-cyan-900 font-semibold hover:underline" href={`tel:${phone}`}>
                 {phone}
               </a>
             </div>
