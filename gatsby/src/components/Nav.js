@@ -9,7 +9,6 @@ export default function Navigation() {
       query={graphql`
         query {
           sanitySiteSettings {
-            title
             menu {
               title
               page {
@@ -29,7 +28,6 @@ export default function Navigation() {
 const NavBar = ({ sanitySiteSettings }) => {
   const [open, setOpen] = useState(false);
   const menu = sanitySiteSettings?.menu || [];
-  const siteTitle = sanitySiteSettings?.title || "Corsham Office Rentals";
 
   return (
     <nav className="bg-slate-900">
@@ -39,7 +37,7 @@ const NavBar = ({ sanitySiteSettings }) => {
             {/* Logo Link Section */}
             <div className="flex-shrink-0">
               <Link to="/" className="text-white font-bold text-xl tracking-tight">
-                {siteTitle}
+                Corsham Office Rentals
               </Link>
             </div>
             
@@ -75,7 +73,7 @@ const NavBar = ({ sanitySiteSettings }) => {
             <button
               id="toggle"
               type="button"
-              className="bg-blue-700 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-slate-800 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => setOpen(!open)}
