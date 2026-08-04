@@ -35,11 +35,17 @@ const NavBar = ({ sanitySiteSettings }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center w-full justify-between">
             {/* Logo Link Section */}
-            <div className="flex-shrink-0">
-              <Link to="/" className="text-white font-bold text-xl tracking-tight">
-                Corsham Office Rentals
-              </Link>
-            </div>
+<div className="flex-shrink-0 flex items-center space-x-3">
+  <Link to="/" className="flex items-center space-x-3 text-white font-bold text-xl tracking-tight">
+    <img 
+      src="/logo.png" 
+      alt="Corsham Office Rentals Logo" 
+      className="h-10 w-auto object-contain bg-transparent" 
+    />
+    <span>Corsham Office Rentals</span>
+  </Link>
+</div>
+
             
             {/* Desktop Navigation */}
             <div className="hidden md:block">
