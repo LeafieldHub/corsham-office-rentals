@@ -30,7 +30,7 @@ const NavBar = ({ sanitySiteSettings }) => {
   const menu = sanitySiteSettings?.menu || [];
 
   return (
-    <nav className="bg-slate-900">
+    <nav className="bg-cyan-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center w-full justify-between">
@@ -73,7 +73,7 @@ const NavBar = ({ sanitySiteSettings }) => {
             <button
               id="toggle"
               type="button"
-              className="bg-slate-800 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-cyan-950 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => setOpen(!open)}
