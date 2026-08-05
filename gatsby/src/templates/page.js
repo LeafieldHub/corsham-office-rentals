@@ -63,7 +63,74 @@ export const query = graphql`
         metaTitle
         metaDescription
       }
-      ...pageContent
+      content {
+        ... on SanityBanner {
+          _key
+          _type
+          title
+          text
+          image {
+            asset {
+              gatsbyImageData
+            }
+          }
+        }
+        ... on SanityHighlights {
+          _key
+          _type
+          topHighlightsText {
+            title
+            text
+          }
+          firstImage {
+            asset {
+              gatsbyImageData
+            }
+          }
+          bottomHighlightsText {
+            title
+            text
+          }
+          secondImage {
+            asset {
+              gatsbyImageData
+            }
+          }
+        }
+        ... on SanityAvailableSpace {
+          _key
+          _type
+          title
+          availabilitySelect {
+            _key
+            title
+            text
+            roomType
+            image {
+              asset {
+                gatsbyImageData
+              }
+            }
+          }
+        }
+        ... on SanityTitleWithDescription {
+          _key
+          _type
+          title
+          description
+        }
+        ... on SanityGallery {
+          _key
+          _type
+          title
+          images {
+            _key
+            asset {
+              gatsbyImageData
+            }
+          }
+        }
+      }
     }
   }
 `;
