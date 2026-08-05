@@ -63,7 +63,9 @@ export const pageContent = graphql`
         images {
           title
           image {
-            ...ImageWithPreview
+            asset {
+              gatsbyImageData(placeholder: BLURRED)
+            }
           }
         }
       }
